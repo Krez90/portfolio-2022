@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Hamimed Bilel</title>
+</head>
+<body>
+    <header class="cd-header">
+		<div class="header-wrapper">
+			<div class="logo-wrap">
+                <div class="switch_p">      
+                    <div id="switch" class="hover-target">
+                        <div id="circle"></div>
+                    </div>
+                    <p><span>dark</span> - <span>light</span></p>
+                </div>
+            </div>
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+				<li class="nav__list-item"><a href="#sec-4" class="hover-target">A propos</a></li>
+				<li class="nav__list-item"><a href="#sec-2" class="hover-target">Projets</a></li>
+				<li class="nav__list-item"><a href="#sec-3" class="hover-target">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+<!-------------------------------------BTN SCROLL HAUT DE PAGE----------------------------------------------------------->
+	<div class="btn">
+		<img src="./arrow_cercle.svg" class="icone">
+	</div>
+
+	
+<!-------------------------------------DIV TEXTE MILIEU SECTION 01 & bouton scroll----------------------------------------------------------->
+	<section id="sec-1">
+            <div class="lignes">
+                <div class="l1"></div>
+                <div class="l2"></div>
+            </div>
+            <div class="switch-wrap">
+                <h1><span>Hamimed </span><span>Bilel</span></h1>
+                <h1><span>Développer </span><span>Web.</span></h1>
+    		</div>
+		<a href="#sec-4">
+			<div class="scroll-down"></div>
+		</a>
+	</section>
+<!-------------------------------------------------SECTION A PROPOS--------------------------------------------------------->
+<section id="sec-4">
+	<div class="has-animation animation-ltr" data-delay="10">
+		<h1 class="title_apropos">A propos</h1>
+	</div>
+	<div class="has-animation animation-rtl" data-delay="1000">
+		<p class="text">Après plusieurs années à
+			travailler dans différents
+			domaines, j'ai décidé de me
+			reconvertir dans le
+			développement web.
+			Diplômé à l’ACCESS CODE
+			SCHOOL j'ai réalisé différents
+			projets, en HTML, CSS,
+			JavaScript et PHP. En 2020 confronté à la pandémie de Covid-19 je me suis lancé en freelance dans la communication, 
+			une expérience riche d'un an et demi, ou j'ai pu apprendre le côté graphique, 
+			design et être confronté aux différents problèmes de mes clients. 
+			Aujourd'hui j'aimerais me consacrer aux développements front-end.
+		</p>
+	</div>
+	<div class="has-animation animation-rtl" data-delay="2000">
+		<img src="./bilel5.png" alt="photo hamimed bilel" width="600" />
+	</div>
+</section>
+<!-------------------------------------------------PROJETS---------------------------------------------------------->
+	<section id="sec-2">
+		<div class="switch-wrap-projet">
+			<h1>PROJETS</h1>
+		</div>
+		<div id="carrouselle">
+			<div class="section">
+				<div class="container_carroussel">
+						<div class="padding-tb">
+							<div class="slider-height-padding">
+								<input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
+								<label for="slide-1"></label>
+								<input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
+								<label for="slider-2"></label>
+								<input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
+								<label for="slider-3"></label>
+								<input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
+								<label for="slider-4"></label>
+									<ul class="ul_items">
+										<li>
+											<span>Publicité clients Graphiste</span>
+										</li>
+										<li>
+											<span>Menu Dynamique Première Pro</span>
+										</li>
+										<li>
+											<span>Site WordPress</span>
+										</li>
+										<li>
+											<span>Jeux Space-Invaders JavaScript</span>
+										</li>
+									</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-------------------------------------------------Contact section 4---------------------------------------------------------->
+	<section id="sec-3">
+		<div class="switch-wrap-contact">
+			<h1>CONTACT</h1>
+		</div>
+		<div id="form-main">
+			<div id="form-div">
+			<form class="form" id="form1" action=" " method="POST">
+				<p class="name">
+				<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
+				</p>
+				<p class="email">
+				<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+				</p>
+				<p class="text">
+				<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+				</p>
+				<div class="submit">
+				<input type="submit" value="Envoyer" id="button-blue"/>
+				<div class="ease"></div>
+				</div>
+			</form>
+			</div>
+		</div>
+</section>
+<!-----------------------------------------------FOOTER--------------------------------------------------------->
+<footer>
+	<div class="wrapper">
+		<p class="title_footer">I am a</p>
+		<div class="scroll">
+			<span class="span">designer.</span>
+			<span class="span">developer.</span>
+			<span class="span">human.</span>
+		</div>
+	</div>
+</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
