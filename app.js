@@ -7,7 +7,6 @@
 	window.addEventListener('load', () => { /* Ceci permet de lancé la timeline quand la page internet et lancé  */
 	
 		const TL = gsap.timeline({paused : true});
-	
 		TL
 		.staggerFrom(titreSpans, 1,{top: -50, opacity: 0, ease: "power2.out"}, 0.3)/* staggerFrom() ceci permet d'animer plusieurs éléments les uns apres les autres (exemple Digial et ensuite HB) */
 		.staggerFrom(titreH2, 1,{top: -50, opacity: 0, ease: "power2.out"}, 0.2)
@@ -128,3 +127,28 @@ btn.addEventListener('click', () =>{
 	})
 })
 
+/////////////////////////////////////////////////////////VALIDATION FORMULAIRE/////////////////////////////////////////////////////////////////
+document.getElementById('form1').addEventListener('submit', (e) =>{
+	
+	var erreur;
+	var nom = document.getElementById('name');
+	var email = document.getElementById('email');
+	var comment = document.getElementById('comment');
+
+	if (!comment.value) {
+		erreur = "Veuillez-renseigner votre comment";
+	}
+	if (!email.value) {
+		erreur = "Veuillez-renseigner votre email";
+	}
+	if (!nom.value) {
+		erreur = "Veuillez-renseigner votre nom";
+	}
+	if (erreur) {
+	e.preventDefault();
+	document.getElementById("erreur").innerHTML = erreur;
+	return false;
+	}else {
+	alert('Formulaire envoyé Merci.');
+	}
+});

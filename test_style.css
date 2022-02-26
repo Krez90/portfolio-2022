@@ -15,7 +15,7 @@ div {
   display: inline-block;
   position: relative;
 }
-.text {
+ {
   max-width: 600px;
   width: 100%;
   line-height: 24px;
@@ -23,10 +23,10 @@ div {
   color: #404040;
   padding: 20px;
 }
-.text.txt-center {
+.txt-center {
   text-align: center;
 }
-.text a {
+ a {
   color: #8167a9;
 }
 .has-animation {
